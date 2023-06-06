@@ -12,7 +12,7 @@ pipeline
                 script
                 {
                   def cadena = "Esperando finales de junio para ir a Bilbao y ver en concierto a Joaquin Sabina"
-                  writeFile file: fichero, text: cadena)
+                  writeFile file: fichero, text: cadena
                 }
             }
         }
