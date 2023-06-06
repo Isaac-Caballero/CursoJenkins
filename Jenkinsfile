@@ -16,5 +16,16 @@ pipeline
                 }
             }
         }
+		stage("Lectura de fichero")
+        {
+            steps
+            {
+                script
+                {
+					def lectura = readFile fichero
+					println lectura
+                }
+            }
+        }
     }  
 }
